@@ -37,7 +37,7 @@ const DFS = () => {
 		for(let i=0;i<4;i++){
 			let row = node[0] + dir[i];
 			let col = node[1] + dir[i+1];
-			if(row>=0 && col>=0 && row < 20 && col <60 && !options[row][col].visited){
+			if(row >= 0 && col >= 0 && row < 20 && col < 60 && !options[row][col].visited){
 				options[row][col].visited = true;
 				options[row][col].parent = node;
 				options[row][col].dist = options[node[0]][node[1]].dist + 1;
