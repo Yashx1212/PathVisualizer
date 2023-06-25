@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import Grid from './components/Nodes';
+import Grid from './components/Grid';
 import './App.css'
 
 function App() {
