@@ -1,5 +1,5 @@
 nav {
-  background-color:rgb(33, 35, 41);
+  background-color:rgb(64, 58, 107);
   height: 40px;
 }
 
@@ -28,7 +28,7 @@ a:hover{
 }
 
 .dropdown select{
-  background-color: rgb(33, 35, 41);
+  background-color:rgb(64, 58, 107);
   color: #fff;
   border: none;
   height: 40px;
