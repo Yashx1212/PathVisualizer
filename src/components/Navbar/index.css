@@ -1,0 +1,39 @@
+nav {
+  background-color:rgb(33, 35, 41);
+  height: 40px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  padding: 0px 20px;
+}
+
+a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover{
+  color: coral;
+}
+
+.dropdown select{
+  background-color: rgb(33, 35, 41);
+  color: #fff;
+  border: none;
+  height: 40px;
+}
+
+.dropdown select option{
+  padding: 50px;
+}

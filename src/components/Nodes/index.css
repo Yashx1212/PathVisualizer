@@ -1,6 +1,10 @@
+.grid{
+    margin: 20px auto;
+}
+
 .unvisited{
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     border: 1px solid black;
     margin: 0px;
 }
@@ -14,16 +18,16 @@
 }
 
 .visited{
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     border: 1px solid black;
     margin: 0px;
     background-color: yellow;
 }
 
 .path{
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     border: 1px solid black;
     margin: 0px;
     background-color: blue;
