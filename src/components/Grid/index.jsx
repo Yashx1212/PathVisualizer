@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef } from "react";
 import BFS from '../../Utils/BFS'
 import Reset from '../../Utils/Reset'
 import DFS from '../../Utils/DFS'
+import Node from "../Node";
 import "./index.css";
 function Grid() {
   const RunAlgo = (nodes,algo) => {
@@ -45,14 +46,12 @@ function Grid() {
           {nodes.map((row, i) => (
             <tr key={i}>
               {row.map((value, j) => (
-                <td
-                  key={`${i}-${j}`}
-                  className={`unvisited ${
-                    i === 0 && j === 0 ? "start" : i === 10 && j === 10 ? "end" : ""
-                  }`}
-                  id={`row-${i} col-${j}`}
-                  value={value}
-                ></td>
+                <Node 
+                key = {`${i}-${j}`} 
+                value={value}
+                class={`unvisited ${ i === 0 && j === 0 ? "start" : i === 10 && j === 10 ? "end" : "" }`}
+                id={`row-${i} col-${j}`}
+                />
               ))}
             </tr>
           ))}
