@@ -9,8 +9,8 @@ import "./index.css";
 const initialState = {
   isLifting: false,
   nodeLifting: "",
-  startNode: { row: 0, col: 0 },
-  endNode: { row: 10, col: 10 }
+  startNode: { row: 9, col: 18 },
+  endNode: { row: 9, col: 37 }
 };
 
 // Define the reducer function
@@ -105,7 +105,7 @@ function Grid() {
                   key={`${i}-${j}`}
                   value={value}
                   class={`unvisited ${
-                    i === 0 && j === 0 ? "start" : i === 10 && j === 10 ? "end" : ""
+                    i === 9 && j === 18 ? "start" : i === 9 && j === 37 ? "end" : ""
                   }`}
                   id={`row-${i} col-${j}`}
                   row={i}
