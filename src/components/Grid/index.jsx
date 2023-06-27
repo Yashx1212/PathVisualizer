@@ -1,11 +1,9 @@
 import React, { useEffect, useMemo, useReducer, useRef } from "react";
-import BFS from '../../Utils/BFS'
 import Reset from '../../Utils/Reset'
-import DFS from '../../Utils/DFS'
 import Node from "../Node";
 import "./index.css";
+import RunAlgo from "../../Utils/Utils";
 
-// Define the initial state
 const initialState = {
   isLifting: false,
   nodeLifting: "",
@@ -13,7 +11,6 @@ const initialState = {
   endNode: { row: 9, col: 37 }
 };
 
-// Define the reducer function
 function reducer(state, action) {
   switch (action.type) {
     case "SET_LIFTING":
@@ -58,18 +55,6 @@ function Grid() {
         document.getElementById(`row-${row} col-${col}`).classList.remove("end");
       }
     }
-  };
-
-  const RunAlgo = (nodes, algo) => {
-    Reset(nodes);
-    setTimeout(() => {
-      if (algo === "DFS") {
-        DFS();
-      }
-      if (algo === "BFS") {
-        BFS();
-      }
-    }, 100);
   };
 
   const nodes = useMemo(() => {
